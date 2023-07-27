@@ -15,7 +15,7 @@ const LandingPage = () => {
         <title>Real Estate</title>
         <meta name="description" content="Discover your perfect home" />
       </Head>
-      <div className="relative bg-gray-white w-full h-[5095.99px] flex flex-col items-center justify-start">
+      <div className="relative bg-gray-white w-full flex flex-col items-center justify-start">
         <Header hamburger={false} />
         <Hero />
         <AreaContainer />
@@ -23,14 +23,7 @@ const LandingPage = () => {
         <RentPropertiesContainer />
         <RentPropertiesForm />
         <Contact />
-        <Footer
-          imageIds="/houseline1.svg"
-          smallImageIds="/social-media-logo.svg"
-          mediumImageIds="/social-media-logo1.svg"
-          largeImageIds="/social-media-logo2.svg"
-          extraSmallImageIds="/social-media-logo3.svg"
-          extraExtraSmallImageIds="/social-media-logo4.svg"
-        />
+        <Footer />
       </div>
     </>
   );
