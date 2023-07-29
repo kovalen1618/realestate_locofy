@@ -12,7 +12,28 @@ import { createClient } from "@supabase/supabase-js";
 import { useEffect, useState } from "react";
 
 // Variables
-const defaultOrder = [];
+const defaultOrder = [
+  {
+    key: "1",
+    label: (
+      <a onClick={(e) => e.preventDefault()}>
+        Popular Properties
+      </a>
+    ),
+    key: "2",
+    label: (
+      <a onClick={(e) => e.preventDefault()}>
+        Latest Properties
+      </a>
+    ),
+    key: "3",
+    label: (
+      <a onClick={(e) => e.preventDefault()}>
+        Recommended Properties
+      </a>
+    ),
+  },
+];
 
 const PropertiesGridView = () => {
   // Pass in Supabase url and key
